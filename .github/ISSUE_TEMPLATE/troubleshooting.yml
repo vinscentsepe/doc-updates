@@ -1,0 +1,90 @@
+name: 🔑 Troubleshooting  
+description: Resolution Troubleshooting steps   
+title: "[Troubleshooting]: "  
+labels: ["troubleshooting"]  
+body:  
+  - type: checkboxes  
+    id: verification  
+    attributes:  
+      label: "Pre-Troubleshooting Checklist"  
+      description: "Before submitting, please confirm the following:"  
+      options:  
+        - label: "I have checked if the issue is network-related."  
+        - label: "I have verified user credentials and permissions."  
+        - label: "I have checked if the access control system is online and powered."  
+        - label: "I have reviewed existing documentation for similar issues."  
+        - label: "I have consulted the support/product team if applicable."  
+
+  - type: input  
+    id: issue-title  
+    attributes:  
+      label: "Issue Title"  
+      description: "Provide a short, clear title for the troubleshooting."  
+    validations:  
+      required: true  
+
+  - type: dropdown  
+    id: issue-type  
+    attributes:  
+      label: "What type of issue are you experiencing?"  
+      options:  
+        - "User failed unlocks"  
+        - "Card/Fob Not Recognized"  
+        - "Door Not Unlocking/Locking"  
+        - "System Connectivity Issue"  
+        - "Software/Integration Issue"  
+        - "Other (Describe Below)"  
+    validations:  
+      required: true  
+
+  - type: textarea  
+    id: issue-description  
+    attributes:  
+      label: "Issue Details"  
+      description: "Describe the problem, when it started, and any error messages."  
+      placeholder: "Example: Employees with valid access cards are getting 'Unlock failed. You're not permitted at this time' errors at the main entrance..."  
+    validations:  
+      required: true  
+
+  - type: textarea  
+    id: affected-systems  
+    attributes:  
+      label: "Affected Hardware/Software"  
+      description: "List the access control system model, software version, and any connected devices."  
+      placeholder: "All Reader Pros"  
+
+  - type: textarea  
+    id: steps-to-reproduce  
+    attributes:  
+      label: "Steps to Reproduce (if applicable)"  
+      description: "Provide step-by-step instructions to recreate the issue."  
+      placeholder: "1. User swipes card at the entrance scanner...\n2. The event history logs 'Unlock failed - failted to unlock because they were accessing outside of opening hours'...\n3. The door remains locked..."  
+
+  - type: textarea  
+    id: troubleshooting-attempts  
+    attributes:  
+      label: "Troubleshooting Steps Taken"  
+      description: "List the actions you've already tried to fix the issue."  
+      placeholder: "Example: Reset the reader, checked the user access level in the system, verified connectivity..."  
+    validations:  
+      required: true  
+
+  - type: textarea  
+    id: resolution  
+    attributes:  
+      label: "Final Resolution (if found)"  
+      description: "Describe how the issue was fixed, or note if further assistance is needed."  
+      placeholder: "Example: Set correct timezone."  
+
+  - type: textarea  
+    id: visuals  
+    attributes:  
+      label: "Attach Screenshots, Logs, or Videos (Optional)"  
+      description: "Upload any supporting visuals to clarify the issue and resolution."  
+
+  - type: textarea  
+    id: hubspot-ticket  
+    attributes:  
+      label: "Attach Screenshots, Logs, or Videos (Optional)"  
+      description: "Include Hubspot ticket."
+      

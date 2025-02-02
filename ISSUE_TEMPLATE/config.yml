@@ -1,0 +1,9 @@
+blank_issues_enabled: false  
+contact_links:[]
+  - name: 📄 Request a New Article  
+    url: https://github.com/YOUR-REPO/issues/new?template=new_article.yml  
+    about: Suggest a brand-new documentation article.  
+
+  - name: ✏️ Request an Update to an Existing Article  
+    url: https://github.com/YOUR-REPO/issues/new?template=update_article.yml  
+    about: Propose edits, corrections, or improvements to existing documentation. 

@@ -1,0 +1,80 @@
+name: 🤯 Weird Issue & Resolution  
+description: Document an unusual issue encountered and how it was resolved  
+title: "[Weird Issue]: "  
+labels: ["documentation", "weird-issues", "troubleshooting"]  
+body:  
+  - type: checkboxes  
+    id: verification  
+    attributes:  
+      label: "Pre-Submission Checklist"  
+      description: "Before submitting, please confirm the following:"  
+      options:  
+        - label: "I have searched existing documentation and found no related article."  
+          required: true  
+        - label: "I have consulted the relevant teams (Support, Product) for verification."  
+          required: true  
+
+  - type: input  
+    id: issue-title  
+    attributes:  
+      label: "Issue Title"  
+      description: "Provide a short, clear title for the issue."  
+    validations:  
+      required: true  
+
+  - type: textarea  
+    id: issue-description  
+    attributes:  
+      label: "Describe the Weird Issue"  
+      description: "Explain the unusual behavior, how it was encountered, and its impact."  
+      placeholder: "Example: Door went offline when scanning at the reader"  
+    validations:  
+      required: true  
+
+  - type: textarea  
+    id: affected-systems  
+    attributes:  
+      label: "Affected Systems or Components"  
+      description: "Which platforms, devices, or configurations were impacted?"  
+      placeholder: "Example: Controller Pro 1.1"  
+
+  - type: textarea  
+    id: steps-to-reproduce  
+    attributes:  
+      label: "Steps to Reproduce (if applicable)"  
+      description: "List step-by-step instructions to recreate the issue."  
+      placeholder: "1. Scan phone/card at the reader assigned to the controller relay"  
+
+  - type: textarea  
+    id: cause  
+    attributes:  
+      label: "What was the cause?"  
+      description: "Describe the cause of the issue"  
+      placeholder: "Example: Short circuit"  
+    validations:  
+      required: true  
+
+  - type: textarea  
+    id: resolution  
+    attributes:  
+      label: "How Was It Resolved?"  
+      description: "Describe how the issue was fixed or mitigated."  
+      placeholder: "Example: Fixed faulty relay wiring"  
+    validations:  
+      required: true  
+
+  - type: textarea  
+    id: visuals  
+    attributes:  
+      label: "Attach Screenshots, Logs, or Videos (Optional)"  
+
+  - type: textarea  
+    id: hubspot-ticket  
+    attributes:  
+      label: "Include Hubspot ticket (if applicable)" 
+    
+  - type: textarea  
+    id: github-ticket  
+    attributes:  
+      label: "Include Github ticket (if applicable)"
+      

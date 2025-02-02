@@ -1,0 +1,76 @@
+name: ❗ Common Issue  
+description: Document a frequently encountered issue and its solution  
+title: "[Common Issue]: "  
+labels: ["documentation", "troubleshooting", "common-issues"]  
+body:
+
+  - type: checkboxes  
+    id: verification  
+    attributes:  
+      label: "Pre-Submission Checklist"  
+      description: "Before submitting, please confirm the following:"  
+      options:  
+        - label: "I have searched existing documentation and found no related article."  
+          required: true  
+        - label: "I have consulted the relevant teams (Support, Product) for verification."  
+          required: true  
+
+  - type: input  
+    id: issue-title  
+    attributes:  
+      label: "Issue Title"  
+      description: "Provide a short, clear title for the issue."  
+    validations:  
+      required: true  
+
+  - type: textarea  
+    id: issue-description  
+    attributes:  
+      label: "Issue Description"  
+      description: "Describe the problem in detail, including when and where it occurs."  
+      placeholder: "Example: Offline reader, red front LED, no valid IP address"  
+    validations:  
+      required: true  
+
+  - type: textarea  
+    id: affected-systems  
+    attributes:  
+      label: "Affected Systems or Components"  
+      description: "Which platforms, devices, or configurations are impacted?"  
+      placeholder: "Example: Kisi Reader Pro v2, v2.1"  
+
+  - type: textarea  
+    id: steps-to-reproduce  
+    attributes:  
+      label: "Steps to Reproduce"  
+      description: "List step-by-step instructions to recreate the issue."  
+      placeholder: "Disconnect modem from the router/switch where the reader's plugged in to for internet access"  
+    validations:  
+      required: true  
+
+  - type: textarea  
+    id: cause  
+    attributes:  
+      label: "What was the cause?"  
+      description: "Describe the cause of the issue"  
+      placeholder: "Example: No internet, controller and the the reader assigned to one of its relay are not in one subnet." 
+
+  - type: textarea  
+    id: workaround  
+    attributes:  
+      label: "Workarounds (if any)"  
+      description: "Are there any temporary fixes users can try?"  
+      placeholder: "Example: N/A."  
+
+  - type: textarea  
+    id: solution  
+    attributes:  
+      label: "Permanent Solution (if known)"  
+      description: "If the issue has been resolved, describe the fix or link to the solution."  
+      placeholder: "Example: Set the controller and reader to one subnet"  
+
+  - type: textarea  
+    id: visuals  
+    attributes:  
+      label: "Attach Screenshots, Logs, or Videos (Optional)"  
+      description: "Upload any supporting visuals to clarify the issue."  

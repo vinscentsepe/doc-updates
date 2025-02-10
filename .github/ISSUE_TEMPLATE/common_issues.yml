@@ -19,7 +19,8 @@ body:
     id: issue-title  
     attributes:  
       label: "Issue Title"  
-      description: "Provide a short, clear title for the issue."  
+      description: "Provide a short, clear title for the issue." 
+      placeholder: "Example: Offline support issue" 
     validations:  
       required: true  
 
@@ -28,7 +29,7 @@ body:
     attributes:  
       label: "Issue Description"  
       description: "Describe the problem in detail, including when and where it occurs."  
-      placeholder: "Example: Offline reader, red front LED, no valid IP address"  
+      placeholder: "Example: When internet is off, it still has LAN IP but offline support is not working and its showing red front LED"  
     validations:  
       required: true  
 

@@ -65,7 +65,7 @@ body:
     attributes:  
       label: "Troubleshooting Steps Taken"  
       description: "List the actions you've already tried to fix the issue."  
-      placeholder: "Example: Reset the reader, checked the user access level in the system, verified connectivity..."  
+      placeholder: "Example: Checked access restriction schedule..."  
     validations:  
       required: true  
 

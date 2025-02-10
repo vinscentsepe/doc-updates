@@ -11,7 +11,7 @@ body:
       options:  
         - label: "I have checked if the issue is network-related."  
         - label: "I have verified user credentials and permissions."  
-        - label: "I have checked if the access control system is online and powered."  
+        - label: "I have checked if the Kisi devices are online and powered."  
         - label: "I have reviewed existing documentation for similar issues."  
         - label: "I have consulted the support/product team if applicable."  
 
@@ -58,7 +58,7 @@ body:
     attributes:  
       label: "Steps to Reproduce (if applicable)"  
       description: "Provide step-by-step instructions to recreate the issue."  
-      placeholder: "1. User swipes card at the entrance scanner...\n2. The event history logs 'Unlock failed - failted to unlock because they were accessing outside of opening hours'...\n3. The door remains locked..."  
+      placeholder: "1. User swipes card at the entrance scanner...\n2. The event history logs 'Unlock failed - failed to unlock because they were accessing outside of opening hours'...\n3. The door remains locked..."  
 
   - type: textarea  
     id: troubleshooting-attempts  

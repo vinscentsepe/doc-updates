@@ -85,6 +85,6 @@ body:
   - type: textarea  
     id: hubspot-ticket  
     attributes:  
-      label: "Attach Screenshots, Logs, or Videos (Optional)"  
-      description: "Include Hubspot ticket."
+      label: "Hubspot/Github tickets"  
+      description: "Include Hubspot/Github tickets."
       

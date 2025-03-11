@@ -1,0 +1,108 @@
+name: "Controller Pro Troubleshooting Guide"
+description: "Submit a troubleshooting guide for an issue."
+title: "Controller Pro Troubleshooting Update"
+labels: [troubleshooting]
+body:
+  - type: input
+    id: customer_name
+    attributes:
+      label: "Customer Name"
+      description: "Name of the customer"
+    validations:
+      required: true
+
+  - type: input
+    id: organization_id
+    attributes:
+      label: "Organization ID"
+      description: "The ID of the customer's organization"
+    validations:
+      required: true
+
+  - type: input
+    id: place_id
+    attributes:
+      label: "Place ID"
+      description: "The ID of the place"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: hardware_model
+    attributes:
+      label: "Reader Model"
+      description: "Select the reader model involved"
+      options:
+        - "Controller Pro 1.0"
+        - "Controller Pro 2.0"
+    validations:
+      required: true
+
+  - type: input
+    id: issue_summary
+    attributes:
+      label: "📝 Issue Summary"
+      description: "Provide a brief description of the issue that requires troubleshooting."
+      placeholder: "Example: Red LED Load fault is lit on the Controller board"
+    validations:
+      required: true
+
+  - type: markdown
+    attributes:
+      value: |
+        ## 🔍 Possible Causes
+        - **Power Issues**: AC outlet problem, Power adapter issue, Damaged or Loosed Power Terminal Block connector, short-circuit on the output relays
+        - **Network Issues**: Controller's ethernet/Wifi is not connected (Needs Blinkup for CP1 and CP2 with Rev Numbers below 553xxxxxx), Damaged or loose RJ45 connectors affecting power/data transmission; ethernet cable length (100m max)
+        - **Hardware Malfunction**: Physical damage or internal component failure.
+
+  - type: checkboxes
+    id: troubleshooting_and_verification
+    attributes:
+      label: "🛠️ Steps to Troubleshoot & Verification"
+      description: "Please confirm you have completed each item:"
+      options:
+        - label: "Verify Input and output voltages (AC outlet, power adapter, output relays)."
+        - label: "Perform Blinkup (for CP1 and CP2 with Rev Numbers below 553xxxxxx)."
+        - label: "Check Network Cable run (<100m) and try another known-working cable."
+        - label: "Inspect Controller board Status LED color (Green:online, Red:not online)."
+        - label: "Test on a Different Port (try another router/switch port)."
+        - label: "Power Cycle the Controller for 5 Minutes (disconnect from power source)."
+        - label: "I have checked existing troubleshooting guides for similar issues."
+        - label: "I have consulted relevant teams or support."
+        - label: "The steps and resolution are clearly documented."
+    validations:
+      required: true
+      min: 8
+      max: 8
+
+  - type: textarea
+    id: resolution_fix
+    attributes:
+      label: "💡 Resolution / Fix"
+      description: "Describe the final solution that resolved the issue."
+      placeholder: "Example: Fixed the short-circuit output relay 1 and power cycled for 5 minutes."
+
+  - type: textarea
+    id: visuals_logs
+    attributes:
+      label: "📸 Visuals & Logs (if available)"
+      description: "Attach screenshots, logs, or error messages to support troubleshooting."
+
+  - type: textarea
+    id: docs_updates
+    attributes:
+      label: "Link to pull requests that update the documentation portal"
+      description: "This issue will remain open until relevant sections of the Kisi Docs Portal are updated."
+
+  - type: input
+    id: submission_date
+    attributes:
+      label: "📅 Date"
+      description: "Enter the date of submission (YYYY-MM-DD)"
+      placeholder: "YYYY-MM-DD"
+
+  - type: input
+    id: related_issues
+    attributes:
+      label: "🔗 Related Issues or Documentation (if any)"
+      description: "Link to related tickets, articles, or documentation."

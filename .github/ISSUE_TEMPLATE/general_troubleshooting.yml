@@ -56,9 +56,9 @@ body:
     attributes:
       value: |
         ## 🔍 Possible Causes
-        - **Power Issues**: AC outlet problem, Power adapter issue, Damaged or Loosed Power Terminal Block connector, short-circuit on the output relays
+        - **Power Issues**: AC outlet problem, power adapter issue, insufficient or unstable power from the PoE switch or injector, damaged or Loosed Power Terminal Block connector, 
         - **Hardware Malfunction**: Physical damage or internal component failure.
-        - **Ethernet/wifi Issues**: Needs Blinkup (for models with Wifi support), Damaged or loose RJ45 connectors affecting power/data transmission; ethernet cable length (100m max)
+        - **Ethernet/wifi Issues**: Needs Blinkup (for models with Wifi support), Damaged or loose RJ45 connectors affecting power/data transmission, ethernet cable length (100m max), use of lower ethernet cable category (Cat6 is recommended for PoE)
         - **Local network related issues (out of support scope)**: Subnetting (VLAN configuration), DNS resolver issue (DNS not resolving IP addresses for *.electricimp.com), DHCP server issues (not enough DHCP client IP addresses, DHCP leased time), Network Security (Firewall/Filters)
 
   - type: checkboxes

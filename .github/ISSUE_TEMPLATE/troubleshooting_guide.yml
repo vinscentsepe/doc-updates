@@ -1,6 +1,6 @@
-name: "General Troubleshooting Guide"
+name: "Troubleshooting Guide"
 description: "Submit a troubleshooting guide for an issue."
-title: "General Troubleshooting Guide"
+title: "[Issue] Troubleshooting Guide"
 labels: [troubleshooting]
 body:
   - type: input

@@ -7,7 +7,7 @@ body:
     id: customer_name
     attributes:
       label: "Customer Name"
-      description: "Name of the customer"a
+      description: "Name of the customer"
     validations:
       required: true
 
